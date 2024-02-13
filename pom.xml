@@ -40,12 +40,6 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.12.1</version>
-					<configuration>
-						<release>${maven.compiler.target}</release>
-						<encoding>UTF-8</encoding>
-						<verbose>true</verbose>
-						<fork>true</fork>
-					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -72,6 +66,7 @@
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-plugin-api</artifactId>
 			<version>3.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<!-- dependencies to annotations -->
